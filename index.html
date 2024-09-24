@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-Clima</title>
+</head>
+<link rel="stylesheet" href="bootstrap.min.css">
+
+<body>
+    <nav class="navbar bg-dark border-bottom border-body m-auto" data-bs-theme="dark">
+        <h1 class="m-auto text-white">API-Clima</h1>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row w-75">
+            <div class="col p-4">
+                <form class="card shadow border">
+                    <div class="mb-3">
+                        <label for="ciudad" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="ciudad">
+                    </div>
+                     <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Pais</label>
+                        <select name="" id="pais">
+                            <option value="Mexico">Mexico</option>
+                            <option value="España">España</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Argentina">Argentina</option>
+                        </select>
+                     </div>
+                    <button type="button" class="btn btn-outline-primary" onclick="consultarAPI();">Consultar</button>
+                </form>
+            </div>
+            <div class="col shadow-lg border mt-4" >
+                <div class="text-center" id="divResultado">
+                    <h1 class="m-auto mt-4">RESULTADO</h1>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="app.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
